@@ -15,8 +15,8 @@ body {
   }
 
   form {
-    background-color: white;
-    padding: 40px 40px 40px 40px;
+    background-color: rgb(255, 220, 220);
+    padding: 50px 50px 50px 50px;
   }
 
   #button-area {
