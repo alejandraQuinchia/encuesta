@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+
+  <body>
+    <h1 id="title">¡Cuéntanos qué música te gusta!</h1>
+    <p id="description">
+     Esta encuesta es para que nos cuentes qué música te gusta más
+    </p>
+    <form id="survey-form">
+      <label id="name-label">Nombre:</label>
+      <input type="text" name="name" id="name" required placeholder="Nombre"><br>
+
+      <label id="email-label">Email:</label>
+      <input type="email" name="email" id="email" required placeholder="Correo electrónico"><br>
+
+      <label id="number-label">Número:</label>
+      <input type="number" name="number" id="number" min="0" max="10" required placeholder="$"><br>
+
+
+      <label id="music-type-label">Género musical favorito:</label>
+      <select id="dropdown" name="music">
+        <option value="rock">Rock</option>
+        <option value="salsa">Salsa</option>
+        <option value="bachata">Bachata</option>
+        <option value="clasica">Clásica</option>
+        <option value="other">Otro</option>
+      </select>
+
+      <label id="additional-comments-label">Comentarios adicionales:</label>
+      <textarea placeholder="Comentarios adicionales"></textarea><br>
+
+      <div id="button-area">
+        <label id="gender-label">Género:</label>
+        <input type="radio" class="radio-inline" name="gender" value="Masculino"> Masculino<br>
+        <input type="radio" class="radio-inline" name="gender" value="Femenino> Femenino<br>
+        <input type="radio" class="radio-inline" name="gender" value="Otro"> Otro
+      </div>
+      <div id="button-area">
+        <label id="transportation-type-label">Transporte que usa:</label>
+        <input type="checkbox" name="vehicle1" value="Bike">Moto<br>
+        <input type="checkbox" name="vehicle2" value="Car">Carro<br>
+        <input type="checkbox" name="vehicle3" value="Bus" checked>Bus<br>
+      </div>
+
+      <input type="submit" id="submit">
+    </form>
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
